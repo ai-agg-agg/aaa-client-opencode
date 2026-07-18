@@ -19,16 +19,14 @@
       ]
     }
   },
-  "peerDependencies": {
-    "aaa": "^1.0.0",
-    "@oclif/core": "^4.0.0"
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@ai-agg-agg/aaa-sdk": "github:ai-agg-agg/aaa-sdk"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "aaa": "github:ai-agg-agg/aaa"
-  },
-  "scripts": {
-    "build": "tsc",
-    "prepare": "tsc"
+    "@oclif/core": "^4.0.0"
   }
 }

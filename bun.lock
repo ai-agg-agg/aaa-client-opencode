@@ -3,25 +3,24 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@aaa/client-opencode",
-      "devDependencies": {
-        "@types/bun": "latest",
-        "aaa": "file:..",
+      "name": "@ai-agg-agg/client-opencode",
+      "dependencies": {
+        "@ai-agg-agg/aaa-sdk": "github:ai-agg-agg/aaa-sdk",
       },
-      "peerDependencies": {
+      "devDependencies": {
         "@oclif/core": "^4.0.0",
-        "aaa": "^1.0.0",
+        "@types/bun": "latest",
       },
     },
   },
   "packages": {
+    "@ai-agg-agg/aaa-sdk": ["@ai-agg-agg/aaa-sdk@github:ai-agg-agg/aaa-sdk#58988fb", {}, "ai-agg-agg-aaa-sdk-58988fb", "sha512-52cq9J1aAQLBsxA1y5MvQg+yLNgWzZZUd3ueJrKkoI2Ljni8zvZXMKS1ixOuRlXmRihb2oOmWqeUEvW4UE/zWg=="],
+
     "@oclif/core": ["@oclif/core@4.11.14", "", { "dependencies": { "ansi-escapes": "^4.3.2", "ansis": "^3.17.0", "clean-stack": "^3.0.1", "cli-spinners": "^2.9.2", "debug": "^4.4.3", "ejs": "^3.1.10", "get-package-type": "^0.1.0", "indent-string": "^4.0.0", "is-wsl": "^2.2.0", "lilconfig": "^3.1.3", "minimatch": "^10.2.5", "semver": "^7.8.1", "string-width": "^4.2.3", "supports-color": "^8", "tinyglobby": "^0.2.17", "widest-line": "^3.1.0", "wordwrap": "^1.0.0", "wrap-ansi": "^7.0.0" } }, "sha512-cZ5Ktd+rT0PO+o7KBH4vRFTgg+xMLf8F41WK39p8MkXEViZA/Qqe+4lzZT6102zgUxMORET1HtF9t5w8CB3tnQ=="],
 
     "@types/bun": ["@types/bun@1.3.14", "", { "dependencies": { "bun-types": "1.3.14" } }, "sha512-h1hFqFVcvAvD9j9K7ZW7vd82aSA+rTdznZa+5bwvCwqSB1jmmfLcbIWhOLx1/+boy/xmjgCs/OMUL8hRJSmnPw=="],
 
     "@types/node": ["@types/node@26.1.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw=="],
-
-    "aaa": ["aaa@file:..", { "dependencies": { "@oclif/core": "^4.0.0" }, "devDependencies": { "@types/bun": "latest" }, "bin": { "aaa": "./bin/run.js" } }],
 
     "ansi-escapes": ["ansi-escapes@4.3.2", "", { "dependencies": { "type-fest": "^0.21.3" } }, "sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ=="],
 

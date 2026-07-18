@@ -1,4 +1,4 @@
-import type { Client, Agent, Plugin, PluginModelField } from 'aaa'
+import type { Client, Agent, Plugin, PluginModelField } from '@ai-agg-agg/aaa-sdk'
 
 const HOME = Bun.env.HOME ?? '~'
 
