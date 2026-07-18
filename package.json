@@ -1,0 +1,23 @@
+{
+  "name": "@aaa/client-opencode",
+  "version": "1.0.0",
+  "description": "OpenCode client plugin for aaa",
+  "type": "module",
+  "main": "./dist/opencode.js",
+  "oclif": {
+    "hooks": {
+      "init": ["./dist/hooks/init"]
+    }
+  },
+  "peerDependencies": {
+    "aaa": "^1.0.0",
+    "@oclif/core": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "aaa": "file:.."
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
