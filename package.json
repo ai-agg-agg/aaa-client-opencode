@@ -22,9 +22,6 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
-    "@ai-agg-agg/aaa-sdk": "github:ai-agg-agg/aaa-sdk"
-  },
   "devDependencies": {
     "@types/bun": "latest",
     "@oclif/core": "^4.0.0"
