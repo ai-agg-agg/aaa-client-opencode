@@ -1,12 +1,22 @@
 {
-  "name": "@aaa/client-opencode",
+  "name": "@ai-agg-agg/client-opencode",
   "version": "1.0.0",
   "description": "OpenCode client plugin for aaa",
   "type": "module",
   "main": "./dist/opencode.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-agg-agg/aaa-client-opencode.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "oclif": {
     "hooks": {
-      "init": ["./dist/hooks/init"]
+      "init": [
+        "./dist/hooks/init"
+      ]
     }
   },
   "peerDependencies": {
@@ -15,9 +25,10 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "aaa": "file:.."
+    "aaa": "github:ai-agg-agg/aaa"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "tsc"
   }
 }
